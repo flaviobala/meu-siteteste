@@ -18,12 +18,12 @@ Escala de cores monocromatica do site
   #063dle
 */
 :root{
-    --cor0:#c5ebd6;
-    --cor1:#83e1ad;
-    --cor2:#3ddc84;
-    --cor3:#2fa866;
-    --cor4:#2fa866;
-    --cor5:#063d1e;
+    --cor0:#5e6ced;
+    --cor1:#9e83e1;
+    --cor2:#4242c6;
+    --cor3:#2d2de3;
+    --cor4:#19198e;
+    --cor5:#211442;
     --font-padrao: Arial, Verdana, Helvetica, sans-serif;
     --fonte-destaque: 'Bebas Neue', cursive;
     --font-android: 'Android', cursive;
@@ -42,7 +42,7 @@ a.externo::after{
     content: '\00A0\1F517';
 }
 header{
-    background-image: linear-gradient(to bottom, var(--cor5),var(--cor2),var(--cor5));
+    background-image: linear-gradient(to bottom , #4242c6, #070765, #070765, #19198e );/*linear-gradient(to bottom, var(--cor5),var(--cor2),var(--cor5));*/
     padding-top: 40px;
     min-height: 150px;
     text-align: center;
@@ -52,6 +52,7 @@ header > h1{
     color: white;
     font-family: var(--fonte-destaque);
     font-size: 3.0em;
+    font-weight: normal;
     margin-bottom: 15px;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.815);
 }
@@ -60,8 +61,11 @@ header > p{
     font-size: 1.2em;
     color: white;
     max-width: 500px;
+    margin: auto;
+    margin-bottom: 20px;
     padding-right: 10px;
     padding-left: 10px;
+    
     margin: auto;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.783);
 
@@ -74,12 +78,12 @@ nav{
     box-shadow: 0px  7px 8px rgba(0, 0, 0, 0.365);
 }
 nav > a{
-    color: white;
+    color: var(--cor1);
     padding: 5px;    
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
-    transition-duration: .8s;
+    transition-duration: .6s;
     
 }
 nav a:hover {
@@ -101,6 +105,8 @@ main{
 main  h1{
     font-family: var(--font-android);
     color: var(--cor5);
+    font-weight: normal;
+    font-size: 1.8em;
    
 
 }
@@ -109,6 +115,7 @@ main h2{
     font-family: var(--font-android);
     color: var(--cor4);
     font-size: 1.3em;
+    font-weight: normal;
     background-image:linear-gradient(to right, var(--cor1),transparent);
     text-align: 8px;
 }
@@ -145,6 +152,22 @@ main img.pequena{
     max-width: 350px;
     display: block;
     margin: auto;
+}
+
+div.video{
+    background-color: var(--cor5);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 58%;
+    position: relative;
+
+}
+div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 92%;
 }
 
 aside{
